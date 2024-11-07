@@ -1,6 +1,7 @@
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #define BASE 0
 #define NUFU 1
@@ -52,11 +53,11 @@
             hold-trigger-on-release;
         };
 
-        tap_a: tap_a {
+        tapdance: tapdance {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_A";
+            label = "TAPDANCE";
             #binding-cells = <0>;
-            bindings = <&kp A>, <&kp LC(A)>, <&none>;
+            bindings = <&none>, <&none>, <&none>;
 
             tapping-term-ms = <150>;
         };
@@ -106,6 +107,48 @@
             bindings = <&kp LC(S)>;
             key-positions = <11 12>;
         };
+
+        bubblemacro {
+            bindings = <&bubble>;
+            key-positions = <8 9>;
+        };
+    };
+
+    macros {
+        addtable: addtable {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(N) &kp T>;
+            label = "ADDTABLE";
+        };
+
+        add_last: add_last {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(N) &kp N>;
+            label = "ADD_LAST";
+        };
+
+        bubble: bubble {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            label = "BUBBLE";
+        };
+
+        red: red {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(M) &kp R>;
+            label = "RED";
+        };
+
+        black: black {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(M) &kp K>;
+            label = "BLACK";
+        };
     };
 
     keymap {
@@ -117,7 +160,7 @@
   &mt LS(Q) A  &mt LS(W) W  &mt LS(E) E     &mt LS(R) R  &mt LS(T) T    &mt LS(Y) Y  &mt LS(U) U                &mt LS(I) I          &mt LS(O) O      &mt LS(P) P
   &mt LS(A) A  &mt LS(S) S  &mt LS(D) D     &mt LS(F) F  &mt LS(G) G    &mt LS(H) H  &mt LS(J) J                &mt LS(K) K          &mt LS(L) L      &mt LS(APOS) APOS
   &mt LS(Z) Z  &mt LS(X) X  &mt LS(C) C     &mt LS(V) V  &mt LS(B) B    &mt LS(N) N  &mt LS(M) M                &mt LS(COMMA) COMMA  &mt LS(DOT) DOT  &mt LS(FSLH) FSLH
-                            &lt 2 LEFT_ALT  &lt 1 TAB    &kp SPACE      &kp ENTER    &mt LANGUAGE_2 LANGUAGE_1
+                            &lt 1 LEFT_ALT  &lt 2 TAB    &lt 3 SPACE    &kp ENTER    &mt LANGUAGE_2 LANGUAGE_1
             >;
         };
 
@@ -134,40 +177,20 @@
         hwp {
             label = "hwp";
             bindings = <
-  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)    &kp LC(NUMBER_6)  &kp LC(N7)  &kp LC(N8)  &kp LC(N9)  &kp LC(N0)
-  &kp PRINTSCREEN   &tap_a            &trans            &trans            &trans        &trans            &trans      &trans      &trans      &trans
-  &trans            &trans            &trans            &trans            &trans        &trans            &trans      &trans      &trans      &trans
+  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)    &kp LC(NUMBER_6)  &kp LC(N7)  &kp LC(N8)       &kp LC(N9)       &kp LC(N0)
+  &trans            &kp LC(F2)        &trans            &trans            &addtable     &trans            &kp LC(U)   &black           &trans           &kp PRINTSCREEN
+  &trans            &trans            &trans            &trans            &kp LC(B)     &add_last         &red        &kp LC(LS(INS))  &kp LA(LS(INS))  &kp LA(INS)
                                       &trans            &trans            &trans        &trans            &trans
             >;
         };
 
-        mouse {
-            label = "mouse";
+        mousefn {
+            label = "mousefn";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans    &trans         &kp TAB      &trans     &kp DELETE
-  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp BACKSPACE
-  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp INS
-                  &trans  &trans  &trans    &trans    &trans
-            >;
-        };
-
-        Scroll {
-            label = "Scroll";
-            bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans    &trans  &trans
-            >;
-        };
-
-        Sniper {
-            label = "Sniper";
-            bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans    &trans  &trans
+  &kp F1  &kp F2         &kp F3  &kp F4  &kp F5    &kp F6    &kp F7    &kp F8    &kp F9    &kp BACKSPACE
+  &trans  &kp LC(LS(N))  &trans  &trans  &trans    &trans    &trans    &trans    &trans    &trans
+  &trans  &trans         &trans  &trans  &trans    &trans    &trans    &mkp MB4  &mkp MB5  &trans
+                         &trans  &trans  &trans    &mkp MB2  &mkp MB1
             >;
         };
     };
