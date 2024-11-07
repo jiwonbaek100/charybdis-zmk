@@ -6,8 +6,23 @@ on:
       - "config/*.keymap"
       - "config/*.dtsi"
       - "keymap_drawer.config.yaml"
+
 jobs:
+  # **pull-latest 작업 추가**
+  **pull-latest:**
+    **runs-on: ubuntu-latest**
+    **steps:**
+      **- name: Checkout code**
+        **uses: actions/checkout@v2**
+      **- name: Pull latest changes**
+        **run: |**
+          **git config --global user.name "github-actions[bot]"**
+          **git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"**
+          **git pull origin main --rebase**
+
+  # draw 작업을 pull-latest 이후에 실행되도록 needs 옵션 추가
   draw:
+    **needs: pull-latest**  # pull-latest 작업이 완료된 후 실행
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
       contents: write
