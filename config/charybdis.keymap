@@ -169,7 +169,7 @@
             bindings = <
   &trans        &sk LSHIFT  &kp UP_ARROW  &sk LCTRL  &mt LS(LEFT_BRACKET) LEFT_BRACKET      &mt LS(MINUS) MINUS          &mt LS(N7) NUMBER_7  &mt LS(N8) N8        &mt LS(N9) NUMBER_9  &kp BACKSPACE
   &kp LEFT_WIN  &kp LEFT    &kp DOWN      &kp RIGHT  &mt LS(RIGHT_BRACKET) RIGHT_BRACKET    &mt LS(EQUAL) EQUAL          &mt LS(N4) NUMBER_4  &mt LS(N5) N5        &mt LS(N6) NUMBER_6  &kp DELETE
-  &trans        &trans      &trans        &trans     &trans                                 &mt LS(SEMICOLON) SEMICOLON  &mt LS(N1) NUMBER_1  &mt LS(N2) NUMBER_2  &kp LS(NUMBER_3)     &trans
+  &trans        &trans      &trans        &trans     &mt LS(GRAVE) GRAVE                    &mt LS(SEMICOLON) SEMICOLON  &mt LS(N1) NUMBER_1  &mt LS(N2) NUMBER_2  &kp LS(NUMBER_3)     &trans
                             &trans        &trans     &trans                                 &trans                       &mt LS(N0) N0
             >;
         };
