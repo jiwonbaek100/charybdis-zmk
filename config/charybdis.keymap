@@ -94,7 +94,7 @@
             key-positions = <23 24>;
         };
 
-        save {
+        saves {
             bindings = <&kp LC(S)>;
             key-positions = <11 12>;
         };
