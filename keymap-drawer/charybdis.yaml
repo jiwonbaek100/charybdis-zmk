@@ -1,169 +1,125 @@
 layers:
   Base:
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
-  - G
-  - H
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: Z, h: Pointer}
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - {t: /, h: Pointer}
-  - {t: '$$mdi:keyboard-esc$$', h: Media}
-  - {t: '$$mdi:keyboard-space$$', h: Navigation}
-  - {t: NuFu, h: sticky}
+  - {t: A, h: Sft+ Q}
+  - {t: W, h: Sft+ W}
+  - {t: E, h: Sft+ E}
+  - {t: R, h: Sft+ R}
+  - {t: T, h: Sft+ T}
+  - {t: Y, h: Sft+ Y}
+  - {t: U, h: Sft+ U}
+  - {t: I, h: Sft+ I}
+  - {t: O, h: Sft+ O}
+  - {t: P, h: Sft+ P}
+  - {t: A, h: Sft+ A}
+  - {t: S, h: Sft+ S}
+  - {t: D, h: Sft+ D}
+  - {t: F, h: Sft+ F}
+  - {t: G, h: Sft+ G}
+  - {t: H, h: Sft+ H}
+  - {t: J, h: Sft+ J}
+  - {t: K, h: Sft+ K}
+  - {t: L, h: Sft+ L}
+  - {t: '''', h: Sft+ '}
+  - {t: Z, h: Sft+ Z}
+  - {t: X, h: Sft+ X}
+  - {t: C, h: Sft+ C}
+  - {t: V, h: Sft+ V}
+  - {t: B, h: Sft+ B}
+  - {t: N, h: Sft+ N}
+  - {t: M, h: Sft+ M}
+  - {t: ',', h: 'Sft+ ,'}
+  - {t: ., h: Sft+ .}
+  - {t: /, h: Sft+ /}
+  - {t: LEFT ALT, h: NumNa}
+  - {t: '$$mdi:keyboard-tab$$', h: hwp}
+  - {t: '$$mdi:keyboard-space$$', h: mousefn}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: Symbol, h: sticky}
-  NuFu:
+  - {t: LANGUAGE 1, h: LANGUAGE 2}
+  NumNa:
   - {t: ▽, type: trans}
-  - F7
-  - F8
-  - F9
-  - F12
-  - {t: ▽, type: trans}
-  - '7'
-  - '8'
-  - '9'
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
+  - UP ARROW
+  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
+  - {t: '[', h: 'Sft+ ['}
+  - {t: '-', h: Sft+ -}
+  - {t: '7', h: Sft+ 7}
+  - {t: '8', h: Sft+ 8}
+  - {t: '9', h: Sft+ 9}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - LEFT WIN
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: ']', h: 'Sft+ ]'}
+  - {t: '=', h: Sft+ =}
+  - {t: '4', h: Sft+ 4}
+  - {t: '5', h: Sft+ 5}
+  - {t: '6', h: Sft+ 6}
   - $$mdi:backspace-reverse-outline$$
   - {t: ▽, type: trans}
-  - F4
-  - F5
-  - F6
-  - F11
   - {t: ▽, type: trans}
-  - '4'
-  - '5'
-  - '6'
-  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '`', h: Sft+ `}
+  - {t: ;, h: Sft+ ;}
+  - {t: '1', h: Sft+ 1}
+  - {t: '2', h: Sft+ 2}
+  - Sft+ 3
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '0', h: Sft+ 0}
+  hwp:
+  - Ctl+ 1
+  - Ctl+ 2
+  - Ctl+ 3
+  - Ctl+ 4
+  - Ctl+ 5
+  - Ctl+ 6
+  - Ctl+ 7
+  - Ctl+ 8
+  - Ctl+ 9
+  - Ctl+ 0
+  - {t: ▽, type: trans}
+  - Ctl+ F2
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&addtable'
+  - {t: ▽, type: trans}
+  - Ctl+ U
+  - '&black'
+  - {t: ▽, type: trans}
+  - PRINTSCREEN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+ B
+  - '&add_last'
+  - '&red'
+  - Ctl+Sft+ INS
+  - Alt+Sft+ INS
+  - Alt+ INS
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  mousefn:
   - F1
   - F2
   - F3
-  - F10
-  - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - '0'
-  Symbol:
-  - '~'
-  - '&'
-  - '*'
-  - {t: ▽, type: trans}
-  - +
-  - {t: ▽, type: trans}
-  - '{'
-  - '}'
-  - {t: ▽, type: trans}
-  - '|'
-  - '-'
-  - $
-  - '%'
-  - ^
-  - '='
-  - {t: ▽, type: trans}
-  - (
-  - )
-  - '"'
-  - ''''
-  - _
-  - '!'
-  - '@'
-  - '#'
-  - '`'
-  - {t: ▽, type: trans}
-  - '['
-  - ']'
-  - {t: ▽, type: trans}
-  - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  Navigation:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:keyboard-tab$$
-  - {t: ▽, type: trans}
-  - $$mdi:backspace-reverse-outline$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - HOME
-  - PAGE DOWN
-  - PAGE UP
-  - END
-  - INS
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Media:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:bluetooth-off$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:bluetooth-off$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:skip-previous$$
-  - $$mdi:volume-low$$
-  - $$mdi:volume-off$$
-  - $$mdi:volume-high$$
-  - $$mdi:skip-next$$
-  - $$mdi:skip-previous$$
-  - $$mdi:volume-low$$
-  - $$mdi:volume-off$$
-  - $$mdi:volume-high$$
-  - $$mdi:skip-next$$
+  - Ctl+Sft+ N
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -171,15 +127,23 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB4'
+  - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - PLAY PAUSE
-  - STOP
-  - STOP
-  - PLAY PAUSE
-  Pointer:
+  - '&mkp MB2'
+  - '&mkp MB1'
+  '4':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -190,91 +154,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
-  - {type: held}
-  - Scroll
-  - Sniper
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Sniper, h: toggle}
-  - {t: Scroll, h: toggle}
   - {t: ▽, type: trans}
-  - '&mkp RCLK'
-  - '&mkp LCLK'
-  - '&mkp MCLK'
-  - '&mkp MCLK'
-  - '&mkp LCLK'
-  Scroll:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Sniper:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -306,3 +198,21 @@ combos:
 - p: [26, 27]
   k: '&mkp MCLK'
   l: [Base]
+- p: [20, 21]
+  k: Ctl+ Z
+- p: [21, 22]
+  k: Ctl+ X
+- p: [22, 23]
+  k: Ctl+ C
+- p: [23, 24]
+  k: Ctl+ V
+- p: [10, 11]
+  k: Ctl+ A
+- p: [13, 14]
+  k: Ctl+ F
+- p: [23, 24]
+  k: Alt+Ctl+ F
+- p: [11, 12]
+  k: Ctl+ S
+- p: [8, 9]
+  k: '&bubble'
