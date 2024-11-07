@@ -210,7 +210,7 @@ combos:
   k: Ctl+ A
 - p: [13, 14]
   k: Ctl+ F
-- p: [15, 16]
+- p: [16, 17]
   k: Alt+Ctl+ F
 - p: [11, 12]
   k: Ctl+ S
