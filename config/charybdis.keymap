@@ -57,49 +57,49 @@
     combos {
         compatible = "zmk,combos";
 
-        gobak {
+        combo_gobak {
             bindings = <&kp LC(Z)>;
             key-positions = <20 21>;
         };
 
-        cutt {
+        combo_cut {
             bindings = <&kp LC(X)>;
             key-positions = <21 22>;
         };
 
-        copyy {
+        combo_copy {
             bindings = <&kp LC(C)>;
             key-positions = <22 23>;
         };
 
-        paster {
+        combo_paste {
             bindings = <&kp LC(V)>;
             key-positions = <23 24>;
         };
 
-        selectA {
+        combo_selectA {
             bindings = <&kp LC(A)>;
             key-positions = <10 11>;
             timeout-ms = <0>;
             require-prior-idle-ms = <0>;
         };
 
-        findF {
+        combo_findF {
             bindings = <&kp LC(F)>;
             key-positions = <13 14>;
         };
 
-        findfile {
+        combo_findfile {
             bindings = <&kp LA(LC(F))>;
             key-positions = <23 24>;
         };
 
-        saves {
+        combo_save {
             bindings = <&kp LC(S)>;
             key-positions = <11 12>;
         };
 
-        bubblemacro {
+        combo_bubblemacro {
             bindings = <&bubble>;
             key-positions = <8 9>;
         };
