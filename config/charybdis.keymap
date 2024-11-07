@@ -52,15 +52,6 @@
             require-prior-idle-ms = <125>;
             hold-trigger-on-release;
         };
-
-        tapdance: tapdance {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE";
-            #binding-cells = <0>;
-            bindings = <&none>, <&none>, <&none>;
-
-            tapping-term-ms = <150>;
-        };
     };
 
     combos {
