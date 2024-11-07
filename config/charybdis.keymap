@@ -91,7 +91,7 @@
 
         combo_findfile {
             bindings = <&kp LA(LC(F))>;
-            key-positions = <23 24>;
+            key-positions = <15 16>;
         };
 
         combo_save {
